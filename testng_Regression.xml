@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <groups>
+     <run>
+	 <include name= "Smoke"> </include>
+		 <include name= "Sanity"> </include>
+		 <include name= "Regression"> </include>
+		 
+	 </run> 
+     </groups>
+     
+     <packages>
+		 <package name="groups_Demo1"></package>
+		 <package name="groups_Demo2"></package>
+		 <package name="testNG_Scripts"></package>
+	 </packages>
+	 
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
